@@ -22,9 +22,9 @@ function Span({ itemLength, taskItems, setTaskItems }) {
         </span>
             {taskItems.map((task, i) => (
                 <ul className="filters" key={i}>
-                    <li><a className={isActive ? 'selected' : 'none'} onClick={handleAll}>All</a></li>
-                    <li><a className={isActive ? 'selected' : 'none'} onClick={handleActive}>Active</a></li>
-                    <li><a>Completed</a></li>
+                    <li><a className={isActive ? 'selected' : 'none'} href="#" onClick={handleAll}>All</a></li>
+                    <li><a className={isActive ? 'selected' : 'none'} href="#" onClick={handleActive}>Active</a></li>
+                    <li><a href="#">Completed</a></li>
                 </ul>))}
             <button className="clear-completed">
                 Clear completed
